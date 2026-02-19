@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class SubString {
     @SuppressWarnings("ConvertToTryWithResources")
     public static void main(String[] args) {
@@ -10,12 +11,10 @@ public class SubString {
         // String domain = email.substring(9);
         if (email.contains("@")) {
             String username = email.substring(0, email.indexOf("@"));
-        String domain = email.substring(email.indexOf("@")+1);
-
-        System.out.println(username);
-        System.out.println(domain);
-        }
-        else {
+            String domain = email.substring(email.indexOf("@") + 1);
+            System.out.println(username);
+            System.out.println(domain);
+        } else {
             System.out.println("Email must contain @ ");
         }
         sc.close();
